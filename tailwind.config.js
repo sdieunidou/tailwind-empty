@@ -5,9 +5,17 @@ module.exports = {
     theme: {
         extend: {
           fontFamily: {
-            sans: ['Inter var', ...defaultTheme.fontFamily.sans],
+            sans: ['Outfit', ...defaultTheme.fontFamily.sans],
           },
-        }
+          backgroundColor: {
+            'header': '#0351B1',
+            'footer': '#032D6E',
+            'main': '#F0F9FC'
+          },
+          colors: {
+            'footer': '#96B2DB',
+          },
+        },
     },
     plugins: [
         require('@tailwindcss/typography'),
