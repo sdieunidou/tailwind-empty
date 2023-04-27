@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Si le fichier ou le répertoire demandé existe, on ne redirige pas
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirige toutes les autres requêtes vers index.php
+RewriteRule ^ index.html [QSA,L]
